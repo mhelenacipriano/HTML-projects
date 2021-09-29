@@ -1,44 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        #div1 {
-            height: 25vh;
-            text-align: center
-        }
+      #div1 {
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
 
-        body {
-            margin: 0px;
-        }
+      body {
+        margin: 0px;
+      }
 
-        #div2 {
-            height: 25vh;
-            text-align: center
-        }
+      #div2 {
+        height: 25vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
 
-        #div3 {
-            height: 25vh;
-            text-align: center
-        }
+      #div3 {
+        text-align: center;
+        display: flex;
+        align-items: flex;
+        justify-content: space-between;
+      }
+
+      #div3 div {
+        height: 12.5vh;
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+      }
+      
+     #div3 #p1{
+          background-color: yellow;
+      }
+
+      #div3 #p2{
+          align-items: center;
+          background-color: green;
+      }
+
+      #div4 {
+        height: 12.5vh;
+        display: flex;
+        flex-direction: row;
+      }
+
+      #div4 #p3{
+          
+        width: 50%;
+          background-color: blue;
+      }
+
+      #div4 #p4{
+          align-items: center;
+          width: 50%;
+          background-color: purple;
+
+
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div id="div1" style="background-color: red">div1</div>
 
-    <body>
-        <div id="div1" style="background-color: red">div1</div>
+    <div id="div2" style="background-color: orange">div2</div>
 
+    <div id="div3">
+      <div id="p1">info1</div>
+      <div id="p2">info2</div>
+    </div>
 
-        <div id="div2" style="background-color: orange">div2</div>
-
-        <div id="div3" style="background-color: yellow">div3</div>
-
-    </body>
-
+    <div id="div4">
+      <div id="p3">info3</div>
+      <div id="p4">info4</div>
+    </div>
+  </body>
 </html>
